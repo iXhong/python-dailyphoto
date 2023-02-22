@@ -26,6 +26,11 @@ def manypic(number):
 	for i in range(number):
 		downloader(url,filename())
 
-manypic(5)
+def order():
+	print('How many imgs would you like to download?')
+	number = input()
+	number = int(number)
+	manypic(number)
 
+order()
 
